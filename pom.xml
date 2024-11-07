@@ -16,15 +16,19 @@
 		<enableAssertions>true</enableAssertions>
 	</properties>
 
-	<!--dependencies>
+	<dependencies>
 
-		<dependency>
+		<!--dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
-		</dependency>
-
-	</dependencies-->
+		</dependency-->
+		<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+			</dependency>
+	</dependencies>
 
 	<profiles>
 
