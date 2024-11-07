@@ -16,7 +16,7 @@
 		<enableAssertions>true</enableAssertions>
 	</properties>
 
-	<dependencies>
+	<!--dependencies>
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -24,7 +24,7 @@
 			<version>8.0.33</version>
 		</dependency>
 
-	</dependencies>
+	</dependencies-->
 
 	<profiles>
 
