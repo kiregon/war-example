@@ -17,7 +17,7 @@ pipeline {
 		stage('Deploy') {
 			when {
 				not {
-					equals expected: 'none' actual: params.DEPLOY_ENVIRONMENT
+					equals expected: 'none', actual: params.DEPLOY_ENVIRONMENT
 				}
 			}
 			steps {
