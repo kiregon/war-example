@@ -27,10 +27,10 @@
 
 
     <dependency>
-      <groupId>bootcamp.jenkins</groupId>
+      <!--groupId>bootcamp.jenkins</groupId>
       <artifactId>war-example</artifactId>
       <version>1.0</version>
-      <scope>compile</scope>
+      <scope>compile</scope-->
       <exclusions>
         <exclusion>  <!-- declare the exclusion here -->
           <groupId>commons-io</groupId>
