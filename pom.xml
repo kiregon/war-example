@@ -24,19 +24,20 @@
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>5.1.6</version>
 		</dependency-->
-<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-<dependency>
+
+
+    <dependency>
       <groupId>bootcamp.jenkins</groupId>
       <artifactId>war-example</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-      <scope>compile</scope>	
+      <version>1.0</version>
+      <scope>compile</scope>
       <exclusions>
         <exclusion>  <!-- declare the exclusion here -->
           <groupId>commons-io</groupId>
           <artifactId>commons-io</artifactId>
         </exclusion>
       </exclusions> 
-</dependency>
+    </dependency>   
 
 	</dependencies>
 	<build>
