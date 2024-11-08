@@ -28,14 +28,7 @@
     <artifactId>commons-io</artifactId>
     <version>2.16.1</version>
 			</dependency-->
-		<dependency>
-      <exclusions>
-        <exclusion>  <!-- declare the exclusion here -->
-          <groupId>commons-io</groupId>
-          <artifactId>commons-io</artifactId>
-        </exclusion>
-      </exclusions>
-		</dependency>
+
 	
 	</dependencies>
 
