@@ -20,5 +20,17 @@ pipeline {
 				sh 'cd ' + env.ENVS_DIR + ' && docker compose down ' + params.DEPLOY_ENVIRONMENT + ' && docker compose up -d ' + params.DEPLOY_ENVIRONMENT
 			}
 		}*/
+		stage('Deploy') {
+            		when {
+               		 not {
+                    		equals expected: 'ninguno', actual: params.DEPLOY_ENVIRONMENT
+               		 }
+            		}
+            		steps {
+                		//bat 'D:\\devenv\\JENKINS_CURSO\\AMBIENTES\\tomcat1\\bin\\shutdown.bat'
+               			 bat 'copy target\\ROOT.war D:\\devenv\\ambientes\\' + params.DEPLOY_ENVIRONMENT + '\\apache-tomcat-9.0.96\\webapps'
+                		//bat 'D:\\devenv\\JENKINS_CURSO\\AMBIENTES\\tomcat1\\bin\\startup.bat'
+            		}
+        	} 		
 	}
 }
