@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+
+  tools {
+    maven 'maven_3_8_5'
+  }
+
+  stages {
+    stage('Build') {
+      steps {
+        // war-example-0.0.1.war
+        bat 'mvn -B -q clean install'
+      }
+    }
+  }
+}
