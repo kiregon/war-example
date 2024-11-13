@@ -7,7 +7,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			when {
-				enviroment name: 'GIT_BRANCH', value: 'origin/main'
+				environment name: 'GIT_BRANCH', value: 'origin/main'
 			}
 			steps {
 				bat 'mvn -B -q clean install'
