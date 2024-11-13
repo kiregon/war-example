@@ -7,6 +7,9 @@ pipeline {
 
   stages {
     stage('Build') {
+      when {
+        enviroment name: 'GIT_BRANCH', value: 'origin/main'
+      }
       steps {
         // war-example-0.0.1.war
         bat 'mvn -B -q clean install'
